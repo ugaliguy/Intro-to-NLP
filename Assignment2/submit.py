@@ -390,7 +390,8 @@ else:
     print 'Invalid partID'
     sys.exit()
 '''
-curlcmd = cmd + "'" + str(data).replace("'",'"') +  "'" + " '" + url + "'"
+# curlcmd = cmd + "'" + str(data).replace("'",'"') +  "'" + " '" + url + "'"
+curlcmd = cmd + '"' + str(data).replace("'",'"').replace('"','\\"') + '"' + ' "'+ url + '"'
 print curlcmd
 print
 os.system(curlcmd)

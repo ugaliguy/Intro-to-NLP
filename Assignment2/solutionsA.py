@@ -54,7 +54,7 @@ def q1_output(unigrams, bigrams, trigrams, filename):
     unigrams_keys = unigrams.keys()
     unigrams_keys.sort()
     for unigram in unigrams_keys:
-        outfile.write('UNIGRAM ' + unigram[0] + ' ' + str(unigrams[unigram]) + '\n')
+        outfile.write('UNIGRAM ' + unigram + ' ' + str(unigrams[unigram]) + '\n')
 
     bigrams_keys = bigrams.keys()
     bigrams_keys.sort()
